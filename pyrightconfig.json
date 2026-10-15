@@ -1,0 +1,11 @@
+{
+  "//": "Bot modules import each other flat (import draft, from bot import Bot), so each bot's src/ must be on the path. Only the bot under development is listed, to avoid main/ and baseline/ shadowing each other's identically-named modules.",
+  "include": ["bots/main/src", "scripts"],
+  "extraPaths": ["sdk/python", "bots/main/src"],
+  "venvPath": ".",
+  "venv": ".venv",
+  "pythonVersion": "3.13",
+  "pythonPlatform": "Linux",
+  "typeCheckingMode": "standard",
+  "reportMissingModuleSource": "none"
+}

@@ -1,0 +1,21 @@
+.cambc/
+bots/*/.cambc/
+matches/
+replays/
+bots/*/build/
+bots/*/target/
+
+# --- added by hand; `cambc init` has preserved these across refreshes ---
+# sdk/ and cmake/ are CLI-managed and restored by `cambc init` (all four
+# languages, regardless of cambc.toml). Nothing here is hand-edited.
+sdk/
+cmake/
+
+# Local tooling: the 3.13 venv matching the sandbox interpreter.
+.venv/
+__pycache__/
+*.pyc
+
+# Match artifacts.
+*.wasm
+stats*.json
